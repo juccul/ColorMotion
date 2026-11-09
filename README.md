@@ -1,6 +1,6 @@
 # ColorMotion
 
-An Xposed module (Vector/LSPosed) that brings ColorOS 17's notification shade and quick settings motion to Samsung One UI 8.5 SystemUI: a spring-driven panel, a row-by-row cascade of QS tiles and notification cards, rebound on release, and the matching blur.
+An Xposed module (Vector/LSPosed) that gives Samsung One UI 8.5's notification shade and quick settings a smoother animation: a spring-driven panel, a row-by-row cascade of QS tiles and notification cards, rebound on release, and a matching blur.
 
 Tested on a Galaxy S24 (SM-S921B) running One UI 8.5 / Android 16 with Vector. Other devices and versions are untested. The module checks the SystemUI classes it binds to and removes all of its hooks if they don't match.
 

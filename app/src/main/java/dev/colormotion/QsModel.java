@@ -3,7 +3,7 @@ package dev.colormotion;
 import java.util.Arrays;
 
 /**
- * Control-center motion of ColorOS 17 (com.oplus.systemui.plugins.qs.animator), free of Android
+ * Control-center motion model (reference: com.oplus.systemui.plugins.qs.animator), free of Android
  * dependencies so it can be replayed offline against reference recordings.
  *
  * Sources: QSPanelExpandFraction (fraction + element thresholds), QSPanelTranslationY (panel

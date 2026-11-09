@@ -3,7 +3,7 @@ package dev.colormotion;
 /**
  * Damped harmonic oscillator stepped with the closed-form solution.
  *
- * Mirrors androidx.dynamicanimation SpringForce.updateValues and ColorOS 17's
+ * Mirrors androidx.dynamicanimation SpringForce.updateValues and the reference
  * COUISpringForce.updateValues (defpackage/COUISpringForce.java): stiffness = naturalFreq^2,
  * setResponse(r) => naturalFreq = 2*pi/r, setBounce(b) => dampingRatio = 1 - b,
  * valueThreshold = minimumVisibleChange * 0.75, velocityThreshold = valueThreshold * 62.5.

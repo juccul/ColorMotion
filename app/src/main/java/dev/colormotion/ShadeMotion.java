@@ -18,7 +18,7 @@ import de.robv.android.xposed.XposedBridge;
 import de.robv.android.xposed.XposedHelpers;
 
 /**
- * Ports ColorOS 17's layered panel motion onto One UI 8.5's split shade.
+ * Layered panel motion for One UI 8.5's split shade.
  *
  * Samsung drives every shade visual from NotificationPanelViewController's expanded height, so the
  * ColorOS fraction spring is inserted between the finger and setExpandedHeightInternal(), and the

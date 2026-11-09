@@ -1,7 +1,7 @@
 package dev.colormotion;
 
 /**
- * Port of Facebook Rebound's Spring as stepped by ColorOS 17's
+ * Port of Facebook Rebound's Spring as stepped by the reference
  * AndroidSpringLooperFactory$ChoreographerAndroidSpringLooper: RK4 at a fixed 1 ms step, frame delta
  * capped at 64 ms, interpolation of the leftover time, Origami tension/friction conversion from
  * SpringConfig.fromOrigamiTensionAndFriction.

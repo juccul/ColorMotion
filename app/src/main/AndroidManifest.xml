@@ -4,7 +4,7 @@
         android:label="ColorMotion"
         android:description="@string/app_desc">
         <meta-data android:name="xposedmodule" android:value="true" />
-        <meta-data android:name="xposeddescription" android:value="ColorOS 17 shade and quick settings motion for One UI 8.5" />
+        <meta-data android:name="xposeddescription" android:value="Smoother notification shade and quick settings animation for One UI 8.5" />
         <meta-data android:name="xposedminversion" android:value="93" />
         <meta-data android:name="xposedscope" android:resource="@array/xposed_scope" />
     </application>

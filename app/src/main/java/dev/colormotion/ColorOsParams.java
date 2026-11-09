@@ -1,7 +1,7 @@
 package dev.colormotion;
 
 /**
- * Motion constants lifted from ColorOS 17 SystemUI (OnePlus 15 PLK110_17.0.0.105, CN).
+ * Motion constants of the reference SystemUI build (PLK110_17.0.0.105, CN).
  * Device tier for that build: persist.sys.oplus.anim_level=1 (my_product/build.prop), so
  * ScrimUtil.isHighGaussianLevel() is true and PlatformBlurManagerImpl.useMotionBlur() is true;
  * NotificationStackScrollLayoutExtImpl therefore picks Config.LEGACY_SCALE_ONLY.
