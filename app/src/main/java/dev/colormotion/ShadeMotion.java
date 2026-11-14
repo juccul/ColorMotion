@@ -829,6 +829,7 @@ final class ShadeMotion {
             qsRows.setArmed(true);
         } else {
             qsRows.setArmed(false);
+            releaseStaleQsHost();
             notificationDriven = true;
             notificationOpening.setHost(root);
             if (root != null) {
@@ -1301,8 +1302,23 @@ final class ShadeMotion {
         return false;
     }
 
+    /**
+     * The header clock lives inside the QS fragment's view. When a QS opening collapses, snapHidden()
+     * leaves that host translated to its hidden offset; the notification shade never reset it, so
+     * the next notification opening showed the clock lifted against the carrier row.
+     */
+    private void releaseStaleQsHost() {
+        View host = qsMotionView.get();
+        if (host == null) {
+            host = qsView();
+            if (host != null) qsMotionView = new WeakReference<>(host);
+        }
+        if (host != null && host.getTranslationY() != 0f) host.setTranslationY(0f);
+    }
+
     private void applySplitHeaderPosition(Object animator) {
         if (npvc == null || panel.barState(npvc) != 0 || panelSwitching || panel.side(npvc) > SIDE_SHADE) return;
+        if (side == SIDE_SHADE) releaseStaleQsHost();
         if (side == SIDE_SHADE && !notificationDriven) return;
         if (panel.fraction(npvc) == 0f && !dragging && !inFling) return;
         QsModel model = motionModel();
